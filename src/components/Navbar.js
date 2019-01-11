@@ -6,7 +6,11 @@ export default class Navbar extends Component {
     return (
       <React.Fragment>
         <nav className="navbar navbar-light bg-light mb-3">
-          <span className="navbar-brand mb-0 h1">Logo</span>
+          <span className="navbar-brand mb-0 h1">
+            <NavLink exact to="/" className="nav-link">
+              Logo
+            </NavLink>
+          </span>
           <ul className="nav ml-auto">
             <li className="nav-item">
               <NavLink exact to="/" className="nav-link">
@@ -14,12 +18,12 @@ export default class Navbar extends Component {
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="about" className="nav-link">
+              <NavLink to="/about" className="nav-link">
                 About
               </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink to="contact" className="nav-link">
+              <NavLink to="/contact" className="nav-link">
                 Contact
               </NavLink>
             </li>

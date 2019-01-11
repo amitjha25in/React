@@ -11,6 +11,6 @@ export default class Home extends Component {
       .then(json => this.setState({ data: json }));
   }
   render() {
-    return <AllPosts postData={this.state.data} />;
+    return <AllPosts postData={this.state.data.slice(0, 10)} />;
   }
 }
