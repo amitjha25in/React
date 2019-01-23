@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+//import data from "../data/list.json";
 
 export default class Post extends Component {
   state = {
