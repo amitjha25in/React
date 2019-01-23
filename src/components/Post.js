@@ -1,22 +1,25 @@
 import React, { Component } from "react";
-//import data from "../data/list.json";
+import track from "../data/track.json";
 
 export default class Post extends Component {
-  state = {
-    post: null
+  state = { post: track };
+
+  trackLists = () => {
+    let trackId = this.props.match.params.id;
+    const { post } = this.state;
+    const filteredTours = post.filter(item => item.listId == trackId);
+    this.setState({ post: filteredTours });
   };
   componentDidMount() {
-    let id = this.props.match.params.id;
-    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`)
-      .then(response => response.json())
-      .then(json => this.setState({ post: json }));
+    this.trackLists();
   }
   render() {
     const singalPost = this.state.post ? (
       <div className="row">
         <div className="col-12">
-          <h3>{this.state.post.title}</h3>
-          <p>{this.state.post.body}</p>
+          {this.state.post.map(singleItem => {
+            return <p key={singleItem.id}>{singleItem.track}</p>;
+          })}
         </div>
       </div>
     ) : (

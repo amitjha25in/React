@@ -12,6 +12,8 @@ export default class AllPosts extends Component {
                 <h3>{blog.title}</h3>
               </Link>
               <img className="img-fluid" src={blog.url} alt={blog.title} />
+              <span>{blog.social.like} | </span>
+              <span>{blog.social.dislike}</span>
             </div>
           );
         })}
