@@ -2,7 +2,7 @@
   {
     "userId": 1,
     "id": 1,
-    "title": "title 1",
+    "title": "this is title 1",
     "userImage": "https://via.placeholder.com/600/b4412f",
     "url": "https://via.placeholder.com/600/b4412f",
     "thumbnailUrl": "https://via.placeholder.com/150/b4412f",
@@ -12,7 +12,7 @@
   {
     "userId": 2,
     "id": 2,
-    "title": "title 2",
+    "title": "this is title 2",
     "userImage": "https://via.placeholder.com/600/b4412f",
     "url": "https://via.placeholder.com/600/b4412f",
     "thumbnailUrl": "https://via.placeholder.com/150/b4412f",
@@ -28,7 +28,7 @@
   {
     "userId": 3,
     "id": 3,
-    "title": "title 3",
+    "title": "this is title 3",
     "userImage": "https://via.placeholder.com/600/b4412f",
     "url": "https://via.placeholder.com/600/b4412f",
     "thumbnailUrl": "https://via.placeholder.com/150/b4412f",
@@ -44,7 +44,7 @@
   {
     "userId": 4,
     "id": 4,
-    "title": "title 4",
+    "title": "this is title 4",
     "userImage": "https://via.placeholder.com/600/b4412f",
     "url": "https://via.placeholder.com/600/b4412f",
     "thumbnailUrl": "https://via.placeholder.com/150/b4412f",

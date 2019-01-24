@@ -1,7 +1,10 @@
-import React from "react";
+import React, { Component } from "react";
 
-const Contact = () => {
-  return <React.Fragment>Contact</React.Fragment>;
-};
-
-export default Contact;
+export default class Contact extends Component {
+  componentDidMount() {
+    document.title = "Contact Page";
+  }
+  render() {
+    return <React.Fragment>Contact</React.Fragment>;
+  }
+}
