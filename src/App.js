@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 
 import "./App.css";
 class App extends React.Component {
@@ -10,8 +10,11 @@ class App extends React.Component {
         <Header />
         <Router>
           <div>
-            <Route exact path="/" component={Home} />
-            <Route path="/:id" component={Movie} />
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/movie/:id" component={Movie} />
+              <Route component={Home} />
+            </Switch>
           </div>
         </Router>
       </section>
@@ -58,7 +61,9 @@ class Home extends React.Component {
 
                       <Link
                         to={{
-                          pathname: `/${items.title.split(" ").join("-")}.html`,
+                          pathname: `/movie/${items.title
+                            .split(" ")
+                            .join("-")}.html`,
                           state: { title: items.title, id: items.id }
                         }}
                         className="btn btn-primary"
@@ -80,7 +85,9 @@ class Movie extends React.Component {
   state = {
     movie: ""
   };
+
   componentDidMount() {
+    //let unwatedPath = this.props.location.state.pathname;
     let newid = this.props.location.state.id;
     fetch(
       `https://api.themoviedb.org/3/movie/${newid}?api_key=ae2bf7ba6a38060f33525590abb745b2&language=en-US`
@@ -99,6 +106,7 @@ class Movie extends React.Component {
       // status,
       // revenue
     } = this.state.movie;
+
     return (
       <div className="container">
         <div className="row mb-3">
@@ -107,22 +115,29 @@ class Movie extends React.Component {
           </div>
         </div>
         <div className="row">
-          <div className="cl-6 mx-auto mb-4">
+          <div className="col-sm-3">
+            <img
+              className="img-fluid"
+              src={`http://image.tmdb.org/t/p/w300${poster_path}`}
+              alt={title}
+            />
+          </div>
+          <div className="col-sm-9 mb-4">
             <div className="card">
-              <img
-                className="card-img-top"
-                src={`http://image.tmdb.org/t/p/w780${poster_path}`}
-                alt={title}
-              />
               <div className="card-body">
                 <h4 className="card-title">{title}</h4>
                 <p>Release Date: {release_date}</p>
                 <p>{overview}</p>
-                <a href={homepage} className="btn btn-primary">
+                <a
+                  href={homepage}
+                  className="btn btn-primary"
+                  rel="noopner noreferrer"
+                  target="_blank"
+                >
                   Movie URL
                 </a>
-                <Link to="/" className="btn btn-primary">
-                  Back
+                <Link to="/" className="ml-3 btn btn-primary">
+                  Back to Homepage
                 </Link>
               </div>
             </div>
@@ -132,4 +147,15 @@ class Movie extends React.Component {
     );
   }
 }
+// const ErrorPage = () => {
+//   return (
+//     <div className="container">
+//       <div className="row">
+//         <div className="col-sm-10 mx-auto">
+//           <h2>Please click proper link tab</h2>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
 export default App;
