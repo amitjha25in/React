@@ -3,40 +3,35 @@ import React, { Component } from "react";
 class Contact extends Component {
   state = {
     data: "",
-    isLoading: true
+    isLoading: false
   };
   urlData = () => {
     fetch("https://www.candere.com/blog/wp-json/wp/v2/posts")
       .then(response => response.json())
-      .then(data => this.setState({ data: data, isLoading: false }));
+      .then(data => this.setState({ data: data, isLoading: true }));
   };
-  componentWillMount() {
+  componentDidMount() {
     this.urlData();
   }
   render() {
-    const blogData = () => {
-      this.state.data.map(blogData => {
-        return (
-          <div className="col-12" key={blogData.id}>
-            <h5>{blogData.id}</h5>
+    console.log(this.state.data);
+    var blog = this.state.isLoading ? (
+      this.state.data.map(items => (
+        <div className="col-sm-4 mb-3" key={items.id}>
+          <div className="card">
+            <div className="card-body">
+              <h4 className="card-title r_title">{items.title.rendered}</h4>
+            </div>
           </div>
-        );
-      });
-    };
-
-    const loadingData = () => {
-      return (
-        <div className="col-sm-12">
-          <h5>Loading</h5>
         </div>
-      );
-    };
-
-    return (
-      <React.Fragment>
-        {this.state.isLoading ? loadingData() : blogData()}
-      </React.Fragment>
+      ))
+    ) : (
+      <div className="row">
+        <h5>Loading</h5>
+      </div>
     );
+
+    return <div className="row">{blog}</div>;
   }
 }
 
