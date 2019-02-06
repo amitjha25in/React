@@ -21,13 +21,14 @@ class Contact extends Component {
           <div className="card">
             <div className="card-body">
               <h4 className="card-title r_title">{items.title.rendered}</h4>
+              <p>{items.excerpt.rendered}</p>
             </div>
           </div>
         </div>
       ))
     ) : (
       <div className="row">
-        <h5>Loading</h5>
+        <h5 className="text-center">Loading</h5>
       </div>
     );
 
