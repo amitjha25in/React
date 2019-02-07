@@ -1,26 +1,50 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
+      <React.Fragment>
+        <div className="jumbotron text-center">
+          <h2 className="rug">RANDOM USER GENERATOR</h2>
+          <p className="rugP">
+            A free, open-source API for generating random user data. Like Lorem
+            Ipsum, but for people.
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+        </div>
+        <div className="userWrapper">
+          <div className="userImg">
+            <img
+              src="https://randomuser.me/api/portraits/women/68.jpg"
+              alt="user"
+            />
+          </div>
+          <div className="userInfo">
+            <p className="user_title">Hi, My name is</p>
+            <p className="user_value">gail fernandez</p>
+          </div>
+          <div className="social">
+            <span>
+              <i class="user" />
+            </span>
+            <span>
+              <i class="envelope" />
+            </span>
+            <span>
+              <i class="calendar" />
+            </span>
+            <span>
+              <i class="map-marker" />
+            </span>
+            <span>
+              <i class="phone" />
+            </span>
+            <span>
+              <i class="unlock-alt" />
+            </span>
+          </div>
+        </div>
+      </React.Fragment>
     );
   }
 }
