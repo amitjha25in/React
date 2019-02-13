@@ -1,6 +1,30 @@
-import React from "react";
-const Home = () => {
-  return <div className="col-sm-12">This is Home Page</div>;
-};
+import React, { Component } from "react";
+import ReactWOW from "react-wow";
 
-export default Home;
+export default class Home extends Component {
+  render() {
+    return (
+      <div className="mainContainer">
+        <div className="absoluteContent">
+          <div className="container">
+            <div className="row">
+              <div className="col-12">
+                <ReactWOW animation="bounceInLeft">
+                  <h2>
+                    WHY DO WE <span>USE IT</span>?
+                  </h2>
+                </ReactWOW>
+                <ReactWOW animation="bounceInLeft" delay=".5s">
+                  <div className="r_btn active mr-3 mt-3">About</div>
+                </ReactWOW>
+                <ReactWOW animation="bounceInLeft" delay=".8s">
+                  <div className="r_btn mt-3">Contact</div>
+                </ReactWOW>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
