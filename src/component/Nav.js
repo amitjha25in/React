@@ -8,32 +8,50 @@ export default class Nav extends Component {
         <ul className="r_Navigation">
           <li>
             <NavLink activeClassName="selected" exact to="/">
-              <i className="fa fa-home" aria-hidden="true" />
+              <span className="menu_icon">
+                <i className="fa fa-home" aria-hidden="true" />
+              </span>
+              <span className="menu_name">Home</span>
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName="selected" to="/resume">
-              <i className="fa fa-pencil-square-o" aria-hidden="true" />
+              <span className="menu_icon">
+                <i className="fa fa-address-card-o" aria-hidden="true" />
+              </span>
+              <span className="menu_name">Resume</span>
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName="selected" to="/portfolio">
-              <i className="fa fa-pencil-square-o" aria-hidden="true" />
+              <span className="menu_icon">
+                <i className="fa fa-file-code-o" aria-hidden="true" />
+              </span>
+              <span className="menu_name">Portfolio</span>
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName="selected" to="/service">
-              <i className="fa fa-map-marker" aria-hidden="true" />
+              <span className="menu_icon">
+                <i className="fa fa-cogs" aria-hidden="true" />
+              </span>
+              <span className="menu_name">Service</span>
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName="selected" to="/about">
-              <i className="fa fa-user-o" aria-hidden="true" />
+              <span className="menu_icon">
+                <i className="fa fa-user-o" aria-hidden="true" />
+              </span>
+              <span className="menu_name">About</span>
             </NavLink>
           </li>
           <li>
             <NavLink activeClassName="selected" to="/contact">
-              <i className="fa fa-map-marker" aria-hidden="true" />
+              <span className="menu_icon">
+                <i className="fa fa-map-marker" aria-hidden="true" />
+              </span>
+              <span className="menu_name">Contact</span>
             </NavLink>
           </li>
         </ul>

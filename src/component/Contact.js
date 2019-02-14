@@ -12,10 +12,10 @@ export default class Contact extends Component {
                 <div className="row">
                   <div className="col-12">
                     <div className="mainTitle">
-                      <h2>
+                      {/* <h2>
                         Contact <span>Me</span>
                       </h2>
-                      <h6>Front End & Web Developer, UI/UX Designer</h6>
+                      <h6>Front End & Web Developer, UI/UX Designer</h6> */}
                     </div>
                   </div>
                 </div>

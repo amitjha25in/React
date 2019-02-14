@@ -16,9 +16,9 @@ class App extends Component {
       <Router>
         <section className="bg_color">
           <div className="sideBar">
-            <div className="user_img">
+            {/* <div className="user_img">
               <img src="../images/profile_pic.svg" alt="Amit Jha" />
-            </div>
+            </div> */}
             <Nav />
           </div>
           <div className="main_content">
