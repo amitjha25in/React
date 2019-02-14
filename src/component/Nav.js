@@ -35,7 +35,7 @@ export default class Nav extends Component {
               <span className="menu_icon">
                 <i className="fa fa-cogs" aria-hidden="true" />
               </span>
-              <span className="menu_name">Service</span>
+              <span className="menu_name">Services</span>
             </NavLink>
           </li>
           <li>
