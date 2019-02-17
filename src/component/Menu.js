@@ -26,7 +26,7 @@ export default class Menu extends Component {
   }
   render() {
     return (
-      <div className="menu_container" onClick={this.handleChange}>
+      <div className="menu_container">
         <div className="bar1" />
         <div className="bar2" />
         <div className="bar3" />
