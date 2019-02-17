@@ -10,14 +10,38 @@ export default class Contact extends Component {
             <div className="container">
               <div className="about-wrapper">
                 <div className="row">
-                  <div className="col-12">
-                    <div className="mainTitle">
-                      {/* <h2>
-                        Contact <span>Me</span>
-                      </h2>
-                      <h6>Front End & Web Developer, UI/UX Designer</h6> */}
+                  <div className="col-sm-12 col-md-3 col-lg-3" />
+                  <div className="col-sm-12 col-md-6 col-lg-6">
+                    <div className="contact-wrapper">
+                      <div className="title-pt go-center">
+                        <h2>
+                          Need Some <span>Help?</span>
+                        </h2>
+                      </div>
+                      <div className="form-pt">
+                        <form>
+                          <input name="name" placeholder="Full Name" />
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Email Address"
+                          />
+                          <textarea
+                            name="message"
+                            cols="10"
+                            rows="5"
+                            placeholder="Messge"
+                          />
+                          <input
+                            className="pt-button-regular"
+                            type="submit"
+                            value="Submit"
+                          />
+                        </form>
+                      </div>
                     </div>
                   </div>
+                  <div className="col-sm-12 col-md-3 col-lg-3" />
                 </div>
               </div>
             </div>

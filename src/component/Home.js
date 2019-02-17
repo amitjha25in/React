@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import ReactWOW from "react-wow";
+import { NavLink } from "react-router-dom";
 
 export default class Home extends Component {
   render() {
@@ -10,7 +11,7 @@ export default class Home extends Component {
             <div className="row mb-5">
               <div className="col-sm-4 mx-auto">
                 <img
-                  classname="img-fluid"
+                  className="img-fluid"
                   src="../images/sync.svg"
                   alt="React Js"
                 />
@@ -23,12 +24,16 @@ export default class Home extends Component {
                     WHY DO WE <span>USE IT</span>?
                   </h2>
                 </ReactWOW>
-                <ReactWOW animation="bounceInLeft" delay=".5s">
-                  <div className="r_btn active mr-3 mt-3">Resume</div>
-                </ReactWOW>
-                <ReactWOW animation="bounceInLeft" delay=".8s">
-                  <div className="r_btn mt-3">Portfolio</div>
-                </ReactWOW>
+                <NavLink to="/resume">
+                  <ReactWOW animation="bounceInLeft" delay=".5s">
+                    <div className="r_btn active mr-3 mt-3">Resume</div>
+                  </ReactWOW>
+                </NavLink>
+                <NavLink to="/portfolio">
+                  <ReactWOW animation="bounceInLeft" delay=".8s">
+                    <div className="r_btn mt-3">Portfolio</div>
+                  </ReactWOW>
+                </NavLink>
               </div>
             </div>
           </div>

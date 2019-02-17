@@ -20,33 +20,31 @@ export default class About extends Component {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="flexDisplay">
-                    <div className="col-sm-12 col-md-12 col-lg-6">
-                      <div className="about-left ">
-                        <h4 className="title-inside">How I can help?</h4>
-                        <p className="first-para">
-                          When your business or website need someone to manage
-                          and tune it, but you don't need a in-house developer,
-                          I can provide remote Web Design Development services
-                          that is right for you. I deliver instant ROI because I
-                          am experienced at eliminating the costs of hiring,
-                          training, and retaining in-house full stack web
-                          developer.
-                        </p>
-                        <p>
-                          Wow you still reading this... Looks like you are not
-                          joking and really interested in my help? So below
-                          information is only for you...
-                        </p>
-                      </div>
+                  <div className="col-sm-12 col-md-12 col-lg-6">
+                    <div className="about-left ">
+                      <h4 className="title-inside">How I can help?</h4>
+                      <p className="first-para">
+                        When your business or website need someone to manage and
+                        tune it, but you don't need a in-house developer, I can
+                        provide remote Web Design Development services that is
+                        right for you. I deliver instant ROI because I am
+                        experienced at eliminating the costs of hiring,
+                        training, and retaining in-house full stack web
+                        developer.
+                      </p>
+                      <p>
+                        Wow you still reading this... Looks like you are not
+                        joking and really interested in my help? So below
+                        information is only for you...
+                      </p>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-6">
-                      <img
-                        className="img-fluid"
-                        src="../images/undraw_wireframing_nxyi.svg"
-                        alt="ui"
-                      />
-                    </div>
+                  </div>
+                  <div className="col-sm-12 col-md-12 col-lg-6">
+                    <img
+                      className="img-fluid"
+                      src="../images/undraw_wireframing_nxyi.svg"
+                      alt="ui"
+                    />
                   </div>
                 </div>
               </div>
@@ -152,44 +150,42 @@ export default class About extends Component {
             <div className="container">
               <div className="about-video">
                 <div className="row">
-                  <div className="flexDisplay">
-                    <div className="col-sm-12 col-md-12 col-lg-6 responsive-space-30">
-                      <div className="video-two">
-                        <div className="video-bg">
-                          <img
-                            src="../images/undraw_product_tour_foyt.svg"
-                            alt="Amit Jha"
-                          />
-                        </div>
+                  <div className="col-sm-12 col-md-12 col-lg-6 responsive-space-30">
+                    <div className="video-two">
+                      <div className="video-bg">
+                        <img
+                          src="../images/undraw_product_tour_foyt.svg"
+                          alt="Amit Jha"
+                        />
                       </div>
                     </div>
-                    <div className="col-sm-12 col-md-12 col-lg-6">
-                      <div className="inner-wrapper">
-                        <p className="first-para">
-                          I have experience with designing and coding custom
-                          WordPress themes and customizing pre-made ones in
-                          order to suit the client needs, so as designing and
-                          developing landing pages and complete websites,
-                          responsive large-scale email templates, and providing
-                          consultancy services in various web and design
-                          domains. During my freelance career, I've completed
-                          500+ successful jobs and over 10000 hours of work.
-                        </p>
-                        <p>
-                          I’m a self-driving individual that can work on his own
-                          without a need of micromanaging everything, and also I
-                          can work as a part of the team, whether it’s a small
-                          or a big one. I am a go-getter and am always willing
-                          to go that extra mile to achieve excellence.
-                        </p>
-                        <div className="video-btn-wrapper">
-                          <div className="button-3d-pt">
-                            <a className="pt-button" href="#">
-                              <span className="one-pt">Contact</span>
-                              <span className="two-pt" />
-                              <span className="three-pt">Amit</span>
-                            </a>
-                          </div>
+                  </div>
+                  <div className="col-sm-12 col-md-12 col-lg-6">
+                    <div className="inner-wrapper">
+                      <p className="first-para">
+                        I have experience with designing and coding custom
+                        WordPress themes and customizing pre-made ones in order
+                        to suit the client needs, so as designing and developing
+                        landing pages and complete websites, responsive
+                        large-scale email templates, and providing consultancy
+                        services in various web and design domains. During my
+                        freelance career, I've completed 500+ successful jobs
+                        and over 10000 hours of work.
+                      </p>
+                      <p>
+                        I’m a self-driving individual that can work on his own
+                        without a need of micromanaging everything, and also I
+                        can work as a part of the team, whether it’s a small or
+                        a big one. I am a go-getter and am always willing to go
+                        that extra mile to achieve excellence.
+                      </p>
+                      <div className="video-btn-wrapper">
+                        <div className="button-3d-pt">
+                          <a className="pt-button" href="#">
+                            <span className="one-pt">Contact</span>
+                            <span className="two-pt" />
+                            <span className="three-pt">Amit</span>
+                          </a>
                         </div>
                       </div>
                     </div>
