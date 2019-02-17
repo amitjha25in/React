@@ -11,12 +11,12 @@
   }
 }
 @media (max-width: 1024px) {
-  body,
+  /* body,
   html {
     position: relative;
     overflow: hidden;
     overflow-y: scroll;
-  }
+  } */
   .menu_container {
     display: block;
   }
