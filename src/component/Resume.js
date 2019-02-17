@@ -167,12 +167,7 @@ export default class Resume extends Component {
                             <div className="edu-item">
                               <div className="item-header">
                                 <h6>Froentend and Web Developer</h6>
-                                <p>
-                                  2015 - Present | (Candere.com)
-                                  <a href="#" title="Premium Theme LTD">
-                                    Premium Theme LTD
-                                  </a>
-                                </p>
+                                <p>2015 - Present | (Candere.com)</p>
                               </div>
                               <p>
                                 Creating a brand is never easy, I could make it
@@ -185,12 +180,7 @@ export default class Resume extends Component {
                             <div className="edu-item">
                               <div className="item-header">
                                 <h6>Graphic and UI UX Designer</h6>
-                                <p>
-                                  2009 - 2015 | (Magazine & Newspaper)
-                                  <a href="#" title="Premium Theme LTD">
-                                    Premium Theme LTD
-                                  </a>
-                                </p>
+                                <p>2009 - 2015 | (Magazine & Newspaper)</p>
                               </div>
                               <p>
                                 Creating a brand is never easy, I could make it

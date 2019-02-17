@@ -709,7 +709,7 @@ span.two-pt:before {
 /*portfolio*/
 /*services*/
 .more-services {
-  padding-bottom: 53px;
+  padding-bottom: 30px;
 }
 .advantage-two {
   margin-bottom: 30px;
@@ -735,6 +735,9 @@ span.two-pt:before {
 }
 .advantage-two:last-child {
   margin-bottom: 0;
+}
+.responsive-space-30 {
+  margin-bottom: 30px;
 }
 .advantage-two {
   margin-bottom: 30px;

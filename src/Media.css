@@ -38,7 +38,7 @@
     overflow-y: scroll;
   }
   .about-wrapper {
-    padding: 30px 0px 60px 0;
+    padding: 30px 0px 50px 0;
   }
   .scroll-content {
     margin-right: 0px;
@@ -73,11 +73,52 @@
     font-size: 35px;
     margin-bottom: 15px;
   }
+  .profile-cover {
+    padding: 38px 30px 117px;
+  }
+  .profile-info {
+    padding-top: 23px;
+  }
+  .profile-cover .button-3d-pt {
+    left: 28px;
+    bottom: 92px;
+    top: unset;
+    margin-top: 0;
+  }
+  .profile-pic {
+    margin-bottom: 23px;
+    display: block;
+  }
+  .mainTitle {
+    padding-bottom: 30px;
+  }
+  .pt-portfolio-items {
+    padding-bottom: 25px;
+  }
+  .cat-nav ul {
+    padding-bottom: 15px;
+    margin: 0;
+  }
+  .client-logo {
+    margin-bottom: 15px;
+  }
+  .partner-logo h2 {
+    padding-bottom: 20px;
+  }
+  .about-wrapper {
+    padding: 30px 15px;
+  }
+  .about-video {
+    padding: 50px 15px;
+  }
 }
 @media (max-width: 360px) {
   .r_btn,
   .r_btn.active {
     width: 130px;
+  }
+  p {
+    font-size: 13px;
   }
 }
 @media (max-width: 320px) {
