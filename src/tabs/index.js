@@ -68,7 +68,6 @@ class Tab extends Component {
 
   handleChange = e => {
     const vaues = e.target.value;
-    console.log(vaues);
     this.setState({ vaues });
   };
 
