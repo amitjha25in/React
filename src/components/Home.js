@@ -11,6 +11,11 @@ export default class Home extends Component {
       .then(json => this.setState({ data: json }));
   }
   render() {
-    return <AllPosts postData={this.state.data.slice(0, 10)} />;
+    return (
+      <AllPosts
+        postData={this.state.data.slice(0, 14)}
+        nextTen={this.state.data.slice(15, 30)}
+      />
+    );
   }
 }
