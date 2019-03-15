@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Form from "./Components/Form";
 import axios from "axios";
 import "./App.css";
 
@@ -8,13 +9,16 @@ class App extends Component {
   };
   componentDidMount() {
     axios.get(`http://localhost/testing/json/json.php`).then(res => {
-      const data = res.data;
+      const data = res.data.slice(0, 10);
       this.setState({ data });
     });
   }
   render() {
     return (
       <div className="container">
+        <div className="row">
+          <Form />
+        </div>
         <div className="row items">
           {this.state.data.map(item => {
             return (
