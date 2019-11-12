@@ -1,20 +1,17 @@
 import React from 'react';
-import Header from './components/Header';
-import Form from './components/Form';
-import SingleList from './components/SingleList';
+import Navbar from './components/Navbar';
+import BookContextProvider from './contexts/BookContext';
+import BookList from './components/BookList';
+import NewBookForm from './components/NewBookForm';
 
-const App = () => {
+function App() {
   return (
-    <div className="container">
-      <div className="row">
-        <Header />
-        <div class="col-lg-4 my-4">
-          <Form />
-        </div>
-        <div class="col-lg-8 my-4">
-          <SingleList />
-        </div>
-      </div>
+    <div className="App">
+      <BookContextProvider>
+        <Navbar />
+        <BookList />
+        <NewBookForm />
+      </BookContextProvider>
     </div>
   );
 }
