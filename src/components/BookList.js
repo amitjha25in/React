@@ -5,15 +5,23 @@ import { BookContext } from '../contexts/BookContext';
 const BookList = () => {
     const { books } = useContext(BookContext);
     return books.length ? (
-        <div className="book-list">
-            <ul>
+        <div className="jumbotron">
+            <ul className="list-group">
                 {books.map(book => {
                     return (<BookDetails book={book} key={book.id} />);
                 })}
             </ul>
         </div>
+
     ) : (
-            <div className="empty">No books to read. Hello free time :).</div>
+            <div className="jumbotron">
+                <ul className="list-group">
+                    <li className="list-group-item">
+                        No books to read. Hello free time :).
+                    </li>
+                </ul>
+            </div>
+
         );
 }
 

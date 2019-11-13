@@ -16,11 +16,17 @@ const NewBookForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder="book title" value={title}
-                onChange={(e) => setTitle(e.target.value)} />
-            <input type="text" placeholder="author name" value={author}
-                onChange={(e) => setAuthor(e.target.value)} />
-            <input type="submit" value="add book" />
+            <div className="form-group">
+                <label htmlfor="title"> Book Title:</label>
+                <input type="text" placeholder="book title" className="form-control" id={title} value={title}
+                    onChange={(e) => setTitle(e.target.value)} />
+            </div>
+            <div className="form-group">
+                <label htmlfor="author"> Book Author:</label>
+                <input type="text" placeholder="author name" className="form-control" id="author" value={author}
+                    onChange={(e) => setAuthor(e.target.value)} />
+            </div>
+            <button type="submit" value="add book" class="btn btn-primary">Submit</button>
         </form>
     );
 }
