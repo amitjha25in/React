@@ -1,29 +1,27 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import Navigation from './components/Navigation';
-import BookContextProvider from './contexts/BookContext';
-import BookList from './components/BookList';
-import NewBookForm from './components/NewBookForm';
+import ProductContextProvider from './contexts/ProductContext';
+import Hero from './components/Hero';
 
 function App() {
   return (
     <>
-      <BookContextProvider>
+      <ProductContextProvider>
         <Navigation />
-        <div class="container">
+        <Hero />
+        <div className="container">
           <div className="row">
             <div className="col-lg-3 my-4">
-              <NewBookForm />
+              test
             </div>
-            <div class="col-lg-9 my-4">
-              <Navbar />
-              <BookList />
+            <div className="col-lg-9 my-4">
+              test
             </div>
 
           </div>
         </div>
 
-      </BookContextProvider>
+      </ProductContextProvider>
     </>
   );
 }
