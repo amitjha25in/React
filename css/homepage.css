@@ -127,16 +127,21 @@ a:hover {
   font-size: 22px;
   font-weight: 600;
 }
-.animated_text {
+.animated_text {  
   color: #000;
-  font-size: 35px;
+  font-size: 52px;
+  margin: 0 0 5px;
   display: flex;
   align-items: center;
 }
+.wn_span{
+  display: inline-block;
+  padding: .2em 0;
+}
 .animated_span {
-  font-size: 45px;
   margin-left: 10px;
-  font-weight: 600;
+  padding: .2em 0;
+  font-weight: 800;
 }
 .sub_title,
 .banner_social_link {
