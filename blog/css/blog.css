@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  list-style: none;
+  word-wrap: break-word;
+}
+body { 
+  font-family: lato,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,sans-serif;
+  font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #9b9b9b;
+    background-color: #fff;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+ul li, ol li {
+    display: block;
+}
+.blog_list{
+  position:relative;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.blog_list:before{
+    position: absolute;
+    content: '';
+    top: 160px;
+    left: 60px;
+    width: 1px;
+    height: calc(100% - 160px);
+    background: #e3e3e3;
+}
+.blog_list_area{
+  margin-top: 0;
+  margin-left: 20px;
+  flex: 1;
+  position: relative;
+}
+.blog_autor_area {
+    width: 120px;
+    text-align: center;
+}
+blog_autor_area .author-img {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+.blog_autor_area>*+* {
+    margin-top: 15px;
+}
+figure {
+    margin-bottom: 0;
+}
+.blog_autor_area h5,
+.blog_autor_area p{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1;
+}
+.blog_body {
+    padding: 30px 25px;
+    background: #fff;
+    box-shadow: 0 0 22px rgba(0,0,0,.13);
+}
+.post_image {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+}
+.post_image img {    
+    width: 100%;
+    will-change: tarnsform;
+    transition: all .5s;
+}
+.blog_title{
+    color: #070707;
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.blog_body p{
+  margin-top:15px;
+}
+.post_meta_list {
+    display: flex;
+    align-items: center;
+    font-style: italic;
+}
+.blog_body .post_meta_list {
+    margin-top: 20px;
+}
+.blog_body .post_meta_list>* {
+    padding-right: 15px;
+    margin-right: 15px;
+    border-right: 1px solid #dadada;
+}
+.post_meta_list>*:last-child {
+    margin-right: 0;
+    border-right: none;
+}
+.post_meta_list a {
+    color: #151515;
+}
