@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card_bg {
+        width: 360px;
+        height: 640px;
+        position: relative;
+        transform: rotate(-30deg) skew(25deg) scale(.8);
+        transition: .5s;
+        margin: 150px 0;
+    }
+
+    .card_ {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .card_ img {
+        width: 100%;
+        position: absolute;
+        transition: .5s;
+    }
+
+    .card_bg:hover img:nth-child(5) {
+        transform: translate(100px, -100px);
+        opacity: 1;
+    }
+
+    .card_bg:hover img:nth-child(4) {
+        transform: translate(80px, -80px);
+        opacity: .8;
+    }
+
+    .card_bg:hover img:nth-child(3) {
+        transform: translate(60px, -60px);
+        opacity: .6;
+    }
+
+    .card_bg:hover img:nth-child(2) {
+        transform: translate(40px, -40px);
+        opacity: .5;
+    }
+
+    .card_bg:hover img:nth-child(1) {
+        transform: translate(20px, -20px);
+        opacity: .3;
+    }
+</style>
+
+<body>
+    <div class="card_bg">
+        <div class="card_">
+            <img src="images/bg.png">
+            <img src="images/bg.png">
+            <img src="images/bg.png">
+            <img src="images/bg.png">
+            <img src="images/bg.png">
+        </div>
+    </div>
+</body>
+
+</html>

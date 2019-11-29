@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper {
+        display: block;
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .wrapper ul {
+        display: block;
+    }
+
+    .wrapper ul li {
+        display: inline-block;
+        margin-right: 5px;
+        padding: 15px 25px;
+        cursor: pointer;
+        background: #eee;
+        transition: all .2s ease-in-out;
+
+    }
+
+    .wrapper ul li:hover {
+        cursor: pointer;
+    }
+
+    .follow {
+        transition: all .2s ease-in-out;
+        position: absolute;
+        background-color: red;
+        color: #fff;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <ul>
+            <li>First</li>
+            <li>Second</li>
+            <li>Third</li>
+            <li>Fourth</li>
+            <li>Fifth</li>
+        </ul>
+    </div>
+    <script>
+        const trigger = document.querySelectorAll(".wrapper ul li");
+        const highlight = document.createElement("span");
+        highlight.classList.add('follow');
+        document.body.append(highlight);
+
+        function followalong() {
+            const allOffset = this.getBoundingClientRect();
+            const cords = {
+                width: allOffset.width,
+                height: allOffset.height,
+                bottom: (allOffset.top + window.scrollY) + allOffset.height,
+                left: allOffset.left + window.screenX
+            }
+            highlight.style.width = `${cords.width}px`;
+            highlight.style.height = `2px`;
+            highlight.style.transform = `translate(${cords.left}px, ${cords.bottom}px)`;
+
+        }
+
+        trigger.forEach(li => li.addEventListener('mouseenter', followalong));
+    </script>
+</body>
+
+</html>
