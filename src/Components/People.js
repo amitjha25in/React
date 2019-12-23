@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
-import Data from '././Data/Data';
+import React, { Component } from "react";
+import { User } from "../Data/Data";
 
 class People extends Component {
-    state = {
-        peopleName: '';
-    }
+  state = {
+    peopleName: User
+  };
 
+  render() {
+    console.log(this.state.peopleName);
+    const { peopleName } = this.state;
 
-    componentWillMount()={
-    this.setState({
-        peopleName: Data
-    })
-}
-
-render() {
     return (
-        <>
-            People
-            </>
+      <>
+        {peopleName.map(item => {
+          return <span>{item.id}</span>;
+        })}
+      </>
     );
-}
+  }
 }
 
 export default People;

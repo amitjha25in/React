@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 //import Form from './Components/Form';
-import Form from './Components/People';
+import People from "./Components/People";
 
 function App() {
-  return (
-    <People />
-  );
+  return <People />;
 }
 
 export default App;
