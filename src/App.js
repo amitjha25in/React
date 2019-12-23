@@ -1,15 +1,11 @@
-import React, { Component } from "react";
-import "./App.css";
-import List from './Component/List';
+import React from 'react';
+//import Form from './Components/Form';
+import Form from './Components/People';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="container">
-        <List />
-      </div>
-    );
-  }
+function App() {
+  return (
+    <People />
+  );
 }
 
 export default App;
