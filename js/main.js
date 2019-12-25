@@ -35,33 +35,6 @@
         .removeClass("active");
     });
     /* END ISOTOP JS */
-    /* START COUNDOWN JS */
-    $("#counter_area").on("inview", function(
-      event,
-      visible,
-      visiblePartX,
-      visiblePartY
-    ) {
-      if (visible) {
-        $(this)
-          .find(".counter")
-          .each(function() {
-            var $this = $(this);
-            $({ Counter: 0 }).animate(
-              { Counter: $this.text() },
-              {
-                duration: 5000,
-                easing: "swing",
-                step: function() {
-                  $this.text(Math.ceil(this.Counter));
-                }
-              }
-            );
-          });
-        $(this).unbind("inview");
-      }
-    });
-    /* END COUNDOWN JS */
 
     /* START SERVICE JS */
     $(".service_slider").owlCarousel({
@@ -92,33 +65,6 @@
       }
     });
     /* END SERVICE JS */
-
-    /* START TESTIMONIAL JS */
-    $(".testimonial_area").owlCarousel({
-      loop: true,
-      navText: false,
-      autoplayHoverPause: false,
-      autoplay: 6000,
-      smartSpeed: 1000,
-      margin: 30,
-      autoPlay: true,
-      items: 1,
-      responsive: {
-        320: {
-          items: 1
-        },
-        767: {
-          items: 1
-        },
-        991: {
-          items: 1
-        },
-        1200: {
-          items: 1
-        }
-      }
-    });
-    /* END TESTIMONIAL JS */
   });
 
   /*PRELOADER JS*/
