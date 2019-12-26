@@ -22,7 +22,7 @@ class List extends Component {
       count: this.state.count - 1
     });
   };
-  render() {
+  render() { 
     return (
       <div className="container">
         <div className="row">
