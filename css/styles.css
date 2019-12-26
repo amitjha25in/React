@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --heading: 32px;
+  --sub_heading: 18px;
+}
+body {
+  font-family: "Lato";
+}
+h3 {
+  font-family: "Cormorant";
+  font-size: var(--heading);
+  margin: 0;
+  padding: 0;
+}
+.heading_ {
+  text-align: center;
+}
+.heading_wrapper {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 20px;
+}
+.heading_wrapper:before {
+  content: "";
+  width: 50%;
+  height: 1px;
+  background-color: #2fbccc;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.heading_ p {
+  font-size: var(--sub_heading);
+  margin: 0;
+  padding: 0;
+}
