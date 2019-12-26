@@ -26,7 +26,7 @@ class List extends Component {
     return (
       <div className="container">
         <div className="row">
-          <h3>Dynamic List</h3>
+          <h6>Dynamic List</h6>
           <div className="col-sm-12">
             <ul>
               {this.state.user.map(item => {
@@ -34,7 +34,7 @@ class List extends Component {
               })}
             </ul>
           </div>
-          <h3>Incremane and Decrement Function</h3>
+          <h6>Incremane and Decrement</h6>
           <div className="col-sm-12">
             <div className="row">
               <div className="col-sm-6">
