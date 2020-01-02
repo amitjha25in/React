@@ -1,10 +1,16 @@
 import React from "react";
-//import Form from './Components/Form';
-//import People from "./Components/People";
-import List from "./Components/Lists";
+import Header from "./Components/Header"
+import Posts from "./Components/Posts"
 
 function App() {
-  return <List />;
+  return (
+    <div className="container">
+      <div className="row mb-3">
+        <Header />
+      </div>
+      <Posts />
+    </div>
+  );
 }
 
 export default App;
