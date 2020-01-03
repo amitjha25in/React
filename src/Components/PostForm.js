@@ -12,11 +12,13 @@ class PostForm extends Component {
     }
     onSubmit = (e) => {
         e.preventDefault();
-        this.props.handleSubmit(this.state.title, this.state.body);
+        const newState = this.state;
+        this.props.handleSubmit(newState);
         this.setState({
             title: "",
-            body: ""
-        })
+            body: "",
+        });
+
     }
 
     render() {
@@ -26,11 +28,11 @@ class PostForm extends Component {
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
                         <label htmlFor="fName">Title:</label>
-                        <input type="text" className="form-control" id="fName" name="title" placeholder="title" onChange={this.handleChange} />
+                        <input type="text" className="form-control" id="fName" name="title" placeholder="text" onChange={this.handleChange} value={this.state.title} />
                     </div>
                     <div className="form-group">
                         <label htmlFor="lName">Body:</label>
-                        <input type="text" className="form-control" id="lName" name="body" placeholder="body" onChange={this.handleChange} />
+                        <input type="text" className="form-control" id="lName" name="body" placeholder="body" onChange={this.handleChange} value={this.state.body} />
                     </div>
                     <button type="submit" className="btn btn-primary">Submit</button>
                 </form>

@@ -7,9 +7,13 @@ export default class Posts extends Component {
     state = {
         postLists: PostData
     }
-    handleSubmit = (title, body) => {
-        this.setState({ ...this.state.postLists, title: title, body: body })
-        console.log(title, body)
+    handleSubmit = (newState) => {
+        newState.id = Math.random();
+        let postsLists = [newState, ...this.state.postLists];
+        this.setState({
+            postLists: postsLists
+        })
+        console.log(this.state);
     }
     render() {
         return (
