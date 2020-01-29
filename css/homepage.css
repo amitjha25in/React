@@ -274,17 +274,30 @@ a:hover {
 /* ----------------------------------------------------------------
     [ 04 Start Banner ]
 -----------------------------------------------------------------*/
-#about_section {
+#about_section,
+#main_section,
+#resume_section,
+#service_section,
+#news_section {
   display: flex;
   width: 100%;
   height: 100vh;
   justify-content: center;
   align-items: center;
+  position: relative;
+  background-color: var(--bg_color);
 }
 .flex_cntainer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.hero_ {
+  display: block;
+  position: relative;
+}
+.hero_ img {
+  width: 400px;
 }
 
 /* ----------------------------------------------------------------
