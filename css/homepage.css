@@ -299,6 +299,81 @@ a:hover {
 .hero_ img {
   width: 400px;
 }
+.relative_ {
+  position: relative;
+}
+.pageHeader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.pageHeader span {
+  transform: rotate(270deg);
+  display: block;
+  font-size: 14px;
+  position: relative;
+}
+.pageHeader span:before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--main_color);
+  left: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pageHeader span:after {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--main_color);
+  right: -70px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.line_pagination {
+  position: fixed;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.line_pagination span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 1px solid var(--main_color);
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.line_pagination span {
+  margin: 7px 0px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+.line_pagination span.active:after,
+.line_pagination span:hover:after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 9px;
+  height: 9px;
+  border-radius: 9px;
+  background-color: var(--main_color);
+}
 
 /* ----------------------------------------------------------------
     [ 14 Start Footer ]
