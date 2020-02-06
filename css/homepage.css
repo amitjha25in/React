@@ -77,9 +77,9 @@ ul {
   padding: 0;
   list-style: none;
 }
-p {
+/* p {
   margin: 0;
-}
+} */
 a:hover {
   text-decoration: none;
   outline: none;
@@ -183,7 +183,16 @@ a:hover {
 /* ----------------------------------------------------------------
     [ End Buttons ]
 -----------------------------------------------------------------*/
-
+.display-table {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+.display-content {
+  vertical-align: middle;
+  display: table-cell;
+  padding: 5rem 0;
+}
 /* ----------------------------------------------------------------
     [ 03 Start Header ]
 -----------------------------------------------------------------*/
@@ -274,11 +283,11 @@ a:hover {
 /* ----------------------------------------------------------------
     [ 04 Start Banner ]
 -----------------------------------------------------------------*/
-#about_section,
-#main_section,
-#resume_section,
+/* #resume_section,
 #service_section,
-#news_section {
+#news_section */
+#about_section,
+#main_section {
   display: flex;
   width: 100%;
   height: 100vh;
@@ -374,7 +383,109 @@ a:hover {
   border-radius: 9px;
   background-color: var(--main_color);
 }
-
+/*resume*/
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+ul.timeline:before {
+  content: " ";
+  background: #929292;
+  display: inline-block;
+  position: absolute;
+  left: 9px;
+  top: 30px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li:before {
+  content: " ";
+  background-color: #ffffff;
+  display: inline-block;
+  border-radius: 50%;
+  border: 3px solid #e24727;
+  left: -40px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+  top: 29px;
+  position: relative;
+}
+.timeline {
+  padding-left: 40px;
+}
+.pt-6,
+.py-6 {
+  padding-top: 6rem;
+}
+.skill-box .skillbar:not(:last-child) {
+  margin-bottom: 40px;
+}
+.skill-box .skillbar {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  border-radius: 5px;
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+  background: #eee;
+}
+.skill-box .skillbar-title {
+  position: absolute;
+  top: -28px;
+  left: -17px;
+  font-weight: 600;
+  font-size: 14px;
+}
+.skill-box .skillbar-title span {
+  margin-left: 18px;
+}
+span {
+  display: inline-block;
+}
+.skill-box .skill-bar-percent {
+  position: absolute;
+  font-weight: 500;
+  bottom: 8px;
+  right: 0;
+}
+.skill-box .skillbar-bar {
+  height: 2px;
+  width: 0;
+  border-radius: 3px;
+  float: left;
+  background: #e24727;
+}
+/*resume*/
+/*service*/
+.text-dark {
+  color: #343a40 !important;
+}
+.base-color {
+  color: #e24727 !important;
+}
+h2 span {
+  font-weight: 600;
+}
+.text-muted {
+  color: #6c757d !important;
+}
+.services .services-item {
+  background-color: rgba(200, 200, 200, 0.05);
+  border-radius: 4px;
+  padding: 25px 10px;
+  margin-bottom: 30px;
+}
+.services .services-content {
+  padding-left: 3rem;
+}
+.text-left p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+/*service*/
 /* ----------------------------------------------------------------
     [ 14 Start Footer ]
 -----------------------------------------------------------------*/
