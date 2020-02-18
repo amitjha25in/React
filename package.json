@@ -1,6 +1,7 @@
 {
   "name": "my-app",
   "version": "0.1.0",
+  "home": "www.devamitjha.com",
   "private": true,
   "dependencies": {
     "react": "^16.6.3",
